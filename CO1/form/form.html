@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="form.css">
+        
+    </head>
+    <body>
+        <h1>Register Here</h1>
+        <br>
+        <br>
+        <div class="main">
+            <div class="register">
+            <form id="register" method="post">
+                    <input type="text" placeholder=" First Name" required>
+                    <br>
+                    <br>
+                    <input type="text" placeholder=" Last Name" required>
+                    <br>
+                    <br>
+                    <input type="email" placeholder=" Email" required>
+                    <br>
+                    <br>
+                    <input type="tel" placeholder=" Mobile Number" required>
+                    <br>
+                    <br>
+                    <textarea id="Address" placeholder="Address" name="" rows="4" cols="18" >
+                    </textarea>
+                    <br><br>
+                    <h5>Gender</h5>
+                    <input type="radio" name="gender" id="male">
+                    &nbsp;
+                    <span id="male">Male</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="Female">
+                    &nbsp;
+                    <span id="Female">Female</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                    <br>
+                    <h5>Date of Birth</h5>
+                     <input type="date" placeholder="Date of Birth">&emsp14;
+                    <br>
+                    <br>
+                    <h5>Nationality</h5>
+                    <select id="country" name="country">
+                          <option value="choose">choose from here............</option>
+                          <option value="India">India</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                    </select>
+                    <br><br>
+                    <h5>Language Known</h5>
+                    <select id="Language" name="Language">
+                          <option value="choose">choose from here............</option>
+                          <option value="c">C</option>
+                          <option value="c++">C++</option>
+                          <option value="python">python</option>
+                          <option value="Ruby">Ruby</option>
+                          <option value="java">Java</option>
+                          <option value="c#">c#</option>
+                    </select>
+                    <br><br>
+                    <input type="password" name="" placeholder="Enter Your Password" required>
+                    <br>
+                    <br>
+                    <input type="password" name="" placeholder="confirm Your Password" required>
+                    <br>
+                    <br>
+                    <input type="submit" value="submit" name="submit" id="submit">
+                    
+            </form>
+        </div>
+        </div>
+        
+       
+    </body>
+</html>
