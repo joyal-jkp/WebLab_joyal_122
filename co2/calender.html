@@ -1,0 +1,58 @@
+<script>
+    function showcal()
+    {
+     var mon;
+     const month= ["january","February","March","April","May","june","july","August","september", "october","november","december"]
+     let year =Number(document.getElementById("cal").value);
+     for(mon=0;mon<12;mon++)
+     {
+         let table="<h3>"+month[mon]+"<h3>"+"<table><tr><td>sun</td><td>mon</td><td>tue</td><td>wed</td><td>thur</td><td>fri</td><td>sat</td><tr>"
+         let d=new Date(year,mon);
+         for(let i=0;i<d.getDay();i++)
+         {
+             table=table+"<td></td>";
+         }
+         while(d.getMonth()=mon)
+         {
+             table+="<td">+d.getDate()+"</td>";
+             if(d.getDate()==6)
+             {
+                 table+="</tr>"
+             }
+             d.setDate(d.getDate()+1);
+         }
+      document.getElementById(mon).innerHTML=table;
+     }
+    }
+</script>
+<html>
+    <head>
+        <title>Calendar from user</title>
+    </head>
+    <body>
+        <div class="center">
+            <label for="">Enter Year</label> <input type="number" id="cal">
+            <button class="button" onclick="showcal()">SHOW</button> 
+       <table border=".5">
+           <tr>
+               <td id="0"></td>
+               <td id="1"></td>
+               <td id="2"></td>
+               <td id="3"></td>
+           </tr>
+           <tr>
+               <td id="4"></td>
+               <td id="5"></td>
+               <td id="6"></td>
+               <td id="7"></td>
+           </tr>
+           <tr>
+               <td id="8"></td>
+               <td id="9"></td>
+               <td id="10"></td>
+               <td id="11"></td>
+           </tr>
+       </table>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+</head>
+
+
+
+<body>
+
+    <script>
+
+
+
+        function setnewimage() {
+
+            document.getElementById("img1").src = "download.png";
+            document.getElementById("txt1").style.display="none";
+            document.getElementById("txt2").style.display="block";
+        }
+
+        function setoldimage() {
+
+            document.getElementById("img1").src = "ht.png";
+            document.getElementById("txt1").style.display="block";
+            document.getElementById("txt2").style.display="none";
+        }
+
+    </script>
+
+    <div>
+
+        <center>
+            <img id="img1" src="ht.png" onmouseover="setnewimage()" onmouseout="setoldimage()">
+            <h1 id="txt1">mouse over here</h1>
+            <h1 id="txt2">Hello There</h1>
+        </center>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<script>
+  //document.getElementById("bt").addEventListener("click",colorchange);
+    function colorchange()
+    {
+        var color = "#"+Math.floor(Math.random()*10000000).toString(16);
+        //document.write(color);
+        document.body.style.background=color;
+    }
+    </script>
+<html>
+
+<head>
+    <title>
+        Onclick
+    </title>
+    <style>
+.button {
+            background-color: black;
+            border: 1;
+            color: rgb(250, 248, 248);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+       <input  class="button" type="button" value="Click to change color" onclick="colorchange()" id="bt">
+</body>
+      
+</html>

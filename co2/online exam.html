@@ -1,0 +1,68 @@
+<script>
+    function ans()
+    {
+        var a=0
+        if(  document.getElementById("q1").checked)
+        {
+            a++;
+        }
+    
+      if(document.getElementById("q2").checked)
+      {
+          a++;
+      }
+      document.write("YOUR SCORE IS ",a);
+      
+    }
+</script>
+<html>
+
+<head>
+    <title>
+        Online exam
+    </title>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 13px;
+            border-radius: 25px;
+        }
+
+        .center {
+            background-color: rgb(42, 110, 165);
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            box-shadow: 20px 20px 50px grey;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <p>1.HTML stands for -
+        <p>
+            <input type="radio" name="q1">HighText Machine Language<br>
+            <input type="radio" name="q1">HyperText and links Markup Language<br>
+            <input type="radio" name="q1" id="q1">HyperText Markup Language<br>
+            <input type="radio" name="q1">None of these<br>
+            <br>
+        <p> 2. Which of the following element is responsible for making the text bold in HTML?
+        <p>
+
+            <input type="radio" name="q2" id="">"pre"<br>
+            <input type="radio" name="q2" id="">"a"<br>
+            <input type="radio" name="q2" id="q2">"b"<br>
+            <input type="radio" name="q2" id="">"br"<br>
+            <br>
+            <button class="button" type="submit" onclick="ans()">SUBMIT</button>
+    </div>
+</body>
+
+</html>
